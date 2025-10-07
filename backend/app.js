@@ -6,7 +6,13 @@ import taskRoutes from "./routes/task.routes.js";
 
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://task-board-app-l3yl.vercel.app",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
 app.use(express.json());
 
 // Routes

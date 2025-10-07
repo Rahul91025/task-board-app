@@ -8,13 +8,7 @@ const PORT = process.env.PORT || 5000;
 
 connectDB();
 
-app.use(
-  cors({
-    origin: "https://task-board-app-l3yl.vercel.app",
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true,
-  })
-);
+
 
 app.get("/", (req, res) => {
   res.send("TaskBoard Backend is Running...");
