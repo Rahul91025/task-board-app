@@ -46,7 +46,3 @@ vite.config.js.timestamp*
 *.postcss-cache
 *.tailwindcss-cache
 
-# === Optional: Test files ===
-*.test.js
-*.spec.js
-coverage/
